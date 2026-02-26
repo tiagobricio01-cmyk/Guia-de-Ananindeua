@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Guia de Serviços - Ananindeua</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F4F8FB;
+    color: #263238;
+}
+
+.banner {
+    background: url("banner-site-guia.png") center/cover no-repeat;
+    width: 100%;
+    height: 230px; 
+}
+.banner {
+    background: url("image_1_1772111384793.jpg") center/cover no-repeat;
+    width: 100%;
+    height: 180px;
+}
+
+@media (min-width: 768px) {
+    .banner {
+        height: 480px;
+    }
+}
+
+.logo-prefeitura {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.logo-prefeitura img {
+    height: 65px;
+}
+
+.seltur-topo {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.menu a {
+    background: linear-gradient(135deg, #1565C0, #2E7D32);
+    color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    transform: translateY(-3px);
+}
+
+.btn-todas {
+    background: #0D47A1;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.btn-todas:hover {
+    background: #1B5E20;
+}
+
+.categoria {
+    display: block;
+    background: #fff;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 14px;
+}
+
+h2 {
+    color: #0D47A1;
+    border-left: 6px solid #2E7D32;
+    padding-left: 10px;
+}
+
+ul { list-style: none; padding: 0; }
+
+li {
+    margin-bottom: 8px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 5px;
+}
+
+.categoria a {
+    color: #0D47A1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.categoria a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: linear-gradient(135deg, #1B5E20, #0D47A1);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="banner"></header>
+
+<section class="menu">
+    <a onclick="mostrarCategoria('hospedagem')">Hospedagem</a>
+    <a onclick="mostrarCategoria('cafes')">Cafés e Docerias</a>
+    <a onclick="mostrarCategoria('bares')">Bares e Restaurantes</a>
+    <a onclick="mostrarCategoria('pizzarias')">Pizzarias</a>
+    <a onclick="mostrarCategoria('burgers')">Burguers, Lanches e Sorvetes</a>
+    <a onclick="mostrarCategoria('balnearios')">Balneários e Espaços Recreativos</a>
+    <a onclick="mostrarCategoria('teatro,museu e galeria de arte')">Teatro, Museu e Galeria de Arte</a>
+    <a onclick="mostrarCategoria('casas noturnas')">Casas Noturnas</a>
+    <a onclick="mostrarCategoria('passeios')">Passeios Turísticos</a>
+    <a onclick="mostrarCategoria('espacos')">Espaços Gastronômicos</a>
+    <a onclick="mostrarCategoria('feiras e mercados')">Feiras e Mercados</a>
+    <a onclick="mostrarCategoria('contatos')">Contatos Úteis</a>
+</section>
+
+<div class="menu">
+    <a href="mapas/mapa-de-servicos-de-ananindeua.png" target="_blank" class="botao">
+        Mapa de Serviços de Ananindeua
+    </a>
+
+    <a href="mapas/mapa-dos-bairros-de-ananindeua.png" target="_blank" class="botao">
+        Mapa dos Bairros de Ananindeua
+    </a>
+
+    <a href="mapas/regiao-insular-de-ananindeua.png" target="_blank" class="botao">
+        Mapa da Região Insular de Ananindeua
+    </a>
+</div>
+
+<div style="text-align:center;">
+    <button onclick="mostrarTodas()" class="btn-todas">
+        Mostrar Todas as Categorias
+    </button>
+</div>
+
+<section id="hospedagem" class="categoria">
+<h2>Hospedagem</h2>
+<ul>
+<li><a href="https://www.instagram.com/hotel_for_life?igsh=MWJsYmxjN3NldmRkdA%3D%3D" target="_blank">For Life Hostel</a> - Av. BR-316, Rua Parabor, n° 223B. Guanabara. (91) 98917-2836</li>
+<li><a href="https://www.instagram.com/hotelholidayinnexpbelem?igsh=cmZ6aTIwcGt6dGJo" target="_blank">Holiday Inn Express</a> - Br. 316, km 01 S/N. Atalaia. (91) 3346-7800</li>
+<li><a href="https://www.instagram.com/hotelresidencialamazonas?igsh=MW4zMDQwMHBndWk5dw%3D%3D" target="_blank">Hotel Residencial Amazonas</a> - Trav. SN 21, n° 1272. Cidade Nova. (91) 99366-0506</li>
+<li><a href="https://www.instagram.com/hotelrivieradamazonia?igsh=MXFrZWlwYno1bzlx" target="_blank">Hotel Riviera D'Amazonia</a> - Av. Mário Covas, n° 1228. Coqueiro. (91) 98399-2324</li>
+<li><a href="https://www.instagram.com/hotelzaiaapart/" target="_blank">Zaia Apart-Hoteis</a> - Tv. SN 21, n° 1271. Cidade Nova. (91) 99832-3937</li>
+</ul>
+</section>
+
+<section id="cafes" class="categoria">
+<h2>Cafés e Docerias</h2>
+<ul>
+<li><a href="https://www.instagram.com/caramelladoceriaartesanal/" target="_blank">Caramella Doceria Artesanal</a> - Av. Três Corações, n° 77A. Cidade Nova. (91) 98101-5810</li>
+<li><a href="https://www.instagram.com/casaassispanificadora/" target="_blank">Casa Assis</a> - Tv. SN 21, n° 1271. Cidade Nova. (91) 99992-8458</li>
+<li><a href="https://www.instagram.com/casasaraivapadaria/" target="_blank">Casa Saraiva</a> - Est. da Providência, n° 59. Cidade Nova. (91) 98562-2121</li>
+<li><a href="https://www.instagram.com/comntatoverde/" target="_blank">Comntato verde</a> - Tv. WE 68, n° 1361. Guajará I. (91) 98137-3167</li>
+<li><a href="https://www.instagram.com/corechas_cafesedoces/" target="_blank">Corecha's Cafés e Doces</a> - Tv. WE 32, n° 122. Cidade Nova. (91) 98166-0386</li>
+<li><a href="https://www.instagram.com/domnatopaes/" target="_blank">DomNato Casa de Pães</a> - BR-316, Km 6,5, S/N. Águas Lindas. (91) 98942-0000</li>
+<li><a href="https://www.instagram.com/cafeparaenseoficial/" target="_blank">Café Paraense</a> - Orla de Ananindeua. Icuí Guajará. (91) 98190-6354</li>
+<li><a href="https://www.instagram.com/manguitacafe/" target="_blank">Manguita Café</a> - Hall do Teatro Municipal de Ananindeua. Maguari. (91) 98883-2017</li>
+<li><a href="https://www.instagram.com/oportugues24h/" target="_blank">O Português 24h</a> - Av. Dom Vicente Zico (Arterial 18). Cidade Nova. (91) 99326-4509</li>
+<li><a href="https://www.instagram.com/saintespressobarreto/" target="_blank">Saint Espresso Barreto</a> - Rua Providência, n° 421. Cidade Nova. (91) 98745-0768</li>
+<li><a href="https://www.instagram.com/eguadocafetapiocaria/" target="_blank">Tapiocaria - Égua do Café</a> - Tv. WE 16, n° 11. Cidade Nova. (91) 98716-0536</li>
+<li><a href="https://www.instagram.com/tiramisu_coffe_/" target="_blank">Tapiocaria - Tiramisú - Doceria & Cafeteria</a> - Tv. WE 31, n° 71 - Cidade Nova. (91) 98713-8562</li>
+</ul>
+</section>
+
+<section id="bares" class="categoria">
+<h2>Bares e Restaurantes</h2>
+<ul>
+<li><a href="https://www.instagram.com/banzaisushierestaurante/" target="_blank">Banzai Sushi</a> - Tv. WE 13-B, n° 22. Cidade Nova. (91) 98825-1327)</li>
+<li><a href="https://www.instagram.com/blackpuboficial/" target="_blank">Black Pub</a> - Tv. WE 68, n° 402. Cidade Nova. (91) 98194-8532</li>
+<li><a href="https://www.instagram.com/caldo_mix?igsh=cjI5MjFucmMzb2J3" target="_blank">Caldo Mix</a> - Tv. WE 13-B, n° 131. Cidade Nova. (91) 98214-6933</li>
+<li><a href="https://www.instagram.com/cantodomaguari?igsh=MWlnZjFvdHJ5ZjBwMg%3D%3D" target="_blank">Canto do Maguari</a> - Ilha de João Pilatos, Nova Esperança. (91) 99944-0728</li>
+<li><a href="https://www.instagram.com/boidouro?igshid=k9aenfk0x42m" target="_blank">Churrascaria Boi D'Ouro</a> - Av. Mário Covas, n° 564B. Coqueiro. (91) 3235-9622</li>
+<li><a href="https://www.instagram.com/claragrillbr?igsh=MWt0ZXBqNGhjYzZuYg%3D%3D" target="_blank">Churrascaria Clara Grill</a> - Br-316, Km 03. n° 5.000. Coqueiro. (91) 98238-2303</li>
+<li><a href="https://www.instagram.com/churrascodogoianodelivery?igsh=MWVjY3JsbWJzam5vYw%3D%3D" target="_blank">Churrascaria Goiano</a> - Tv. WE 49, n° 341. Cidade Nova. (91) 98351-9947</li>
+<li><a href="https://www.instagram.com/lacadoroficial/" target="_blank">Churrascaria Laçador</a> - Rod. BR 316, Km 8, S/N. Águas Brancas. (91) 98855-2020</li>
+<li><a href="https://www.instagram.com/churrascariaseringal/" target="_blank">Churrascaria Seringal</a> - Tv. WE-34, S/N. Cidade Nova. (91) 99901-0198</li>
+<li><a href="https://www.instagram.com/churrascaria_sofiatti?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank">Churrascaria Sofiatti</a> - Tv. WE 66. n° 572. Cidade Nova. (91) 98194-9336</li>
+<li><a href="https://www.instagram.com/doracomidastipicas/" target="_blank">Comidas Tipicas da Dora</a> - Praça da Bíblia, S/N. Cidade Nova. (91) 98892-8359</li>
+<li><a href="https://www.instagram.com/conveniencia24harterial18?igsh=azg2cWdxNHFpa2Fn" target="_blank">Conveniência Toda Hora 24h</a> - Av. Arterial 18. n° 361A. Cidade Nova. (91) 98587-6661</li>
+<li><a href="https://www.instagram.com/dompedrorestaurante_?igsh=MWFlOG9zN3dsd20wdw%3D%3D" target="_blank">Dom Pedro Restaurante</a> - Tv. WE 68, n° 442. Cidade Nova. (91) 98203-6843</li>
+<li><a href="https://www.instagram.com/galetodabroficial_?igsh=aDcxMXVjc3FqZzBn" target="_blank">Galeto da Br - Açai & Cia</a> - BR-316, Km 02, n° 292. Guanabara. (91) 98477-1010</li>
+<li><a href="https://www.instagram.com/inkasawine_/" target="_blank">Inkasa Sushi</a> - Rua da Providência, n° 462A. Cidade Nova. (91) 98083-9925</li>
+<li><a href="https://www.instagram.com/inkasawine_/" target="_blank">Inkasa Wine Bar</a> - Estr. do Maguari, n° 3360. Maguari. (91) 98641-0726</li>
+<li><a href="https://www.instagram.com/kassaharaboteco?igsh=Ym1yNThtZGVybmdp" target="_blank">Kassahara Boteco</a> - Tv. WE 9B n° 231B. Cidade Nova. (91) 98251-2023</li>
+<li><a href="https://www.instagram.com/kintai.restaurante/" target="_blank">Kintai Restaurante</a> - Av. Três Corações. Qd. 21, n° 6. Cidade Nova. (91) 98324-3120</li>
+<li><a href="http://instagram.com/kyotosushi___/" target="_blank">Kyoto Sushi</a> - Tv. WE 55, n° 972. Cidade Nova. (91) 98254-2259</li>
+<li><a href="https://www.instagram.com/londres.lounge/" target="_blank">Loundres Lounge</a> - Orla de Ananindeua. Icuí Guajará. (91) 98282-5653</li>
+<li><a href="https://www.instagram.com/malucobeleza.bar?igsh=MXJ5Z2N5ZjI2ZWRzeQ%3D%3D" target="_blank">Maluco Beleza</a> - WE 35, n° 12. Cidade Nova. (91) 98811-8105</li>
+<li><a href="https://www.instagram.com/meusertaooficiall?igsh=bm1lajhsYzkwczFo" target="_blank">Meu Sertão Restaurante Clube</a> - Rod. Transcoqueiro n° 126. Una. (91) 99340-1813</li>
+<li><a href="https://www.instagram.com/nova.anani.beer?igsh=bXZuZzJ2azNiZjFo" target="_blank">Nova Ananin Beer</a> - Casarão do Curtume Maguary. Maguari. (91) 98401-0538</li>
+<li><a href="https://www.instagram.com/ochale.mb/" target="_blank">Ô Chalé</a> - Tv. WE 56, n° 962. Cidade Nova. (91) 98213-3546</li>
+<li><a href="https://www.instagram.com/paladargii/" target="_blank">Paladar GI</a> - Tv. WE 51, n° 221. Cidade Nova. (91) 98041-8851</li>
+<li><a href="https://www.instagram.com/paladargi3coracoes?igsh=MW9mbzB5aXp1Yzl3cQ%3D%3D" target="_blank">Paladar GI Três Corações</a> - Av. Três Corações, n° 102. Cidade Nova. (91) 98637-2965</li>
+<li><a href="https://www.instagram.com/restaurante_do_picole/" target="_blank">Restaurante do Picolé</a> - Ilha de João Pilatos, Bela Vista. (91) 98955-3180</li>
+<li><a href="https://www.instagram.com/saldaterraresto/" target="_blank">Restô da Ilha sal da Terra</a> - Ilha de João Pilatos, Bela Vista. (91) 98278-0564</li>
+<li><a href="https://www.instagram.com/ryorisushibar_?igsh=MWhwMnVpM3k2YmxuMw%3D%3D" target="_blank">Ryôri Sushi Bar</a> - Tv. WE 37, n° 05. Cidade Nova. (91) 98985-0437</li>
+<li><a href="https://www.instagram.com/sabordosulofc?igsh=MWx2MG1tZTQxbzFtYQ%3D%3D" target="_blank">Sabor do Sul Churrascaria</a> - BR-316, Km 05. Providência. (91) 98233-5968</li>
+<li><a href="https://www.instagram.com/srta.kim_koreanfood/" target="_blank">Srta. Kim Korean Food</a> - Tv. WE 25, n° 161. Cidade Nova. (91) 98607-9797</li>
+<li><a href="https://www.instagram.com/tacaca_da_elvina/" target="_blank">Tacacá da Elvina</a> - Tv. WE 31, n° 102. Cidade Nova. (91) 98499-5306</li>
+<li><a href="https://www.instagram.com/ticomebarecozinha?igsh=bXM0MjJqdGFnZnV4" target="_blank">Ti Come Bar & Restaurante</a> - Tv. WE 13-B. n° 151. Cidade Nova. (91) 98983-5012</li>
+<li><a href="https://www.instagram.com/restoterramar/" target="_blank">Terra mar Restô</a> - Tv. WE 25, n° 161. Cidade Nova. (91) 98224-1590</li>
+</ul>
+</section>
+
+<section id="pizzarias" class="categoria">
+<h2>Pizzarias</h2>
+<ul>
+<li><a href="https://www.instagram.com/ciapaulistacidadenova/" target="_blank">Cia.Paulista de Pizza</a> - Tv. WE 27, n° 39. Cidade Nova. (91) 98067-4909</li>
+<li><a href="https://www.instagram.com/doutor_pizza/" target="_blank">Doutor Pizza</a> - Tv. WE 13-B. n° 72. Cidade Nova. (91) 99190-3092</li>
+<li><a href="https://www.instagram.com/famigliapizza/" target="_blank">Famiglia da Pizza</a> - Tv. WE 13-B, n° 261. Cidade Nova. (91) 98314-8733</li>
+<li><a href="https://www.instagram.com/buenas.pizzas.br/" target="_blank">Pizzaria Buenas Pizzas</a> - Estr. Providência n° 355. Cidade Nova. (91) 99215-1100</li>
+<li><a href="https://www.instagram.com/pizzadofabio/" target="_blank">Pizza do Fabio</a> - Tv. WE 16, n° 202. Cidade Nova. (91) 98185-1068</li>
+<li><a href="https://www.instagram.com/fornoexpresso?igsh=ZHNmdG9xOWNsbGNy" target="_blank">Pizzaria Forno Expresso</a> - Trav. WE 27, n° 1. Cidade Nova. (91) 98101-3590</li>
+<li><a href="https://www.instagram.com/sileciaprime?igsh=MXYzYXl5ZG9tMGJ4dA%3D%3D" target="_blank">Sil & Cia</a> - SN 03, com WE 37, n° 01. Cidade Nova. (91) 98124-7777</li>
+<li><a href="https://www.instagram.com/srforneriapizzas?igsh=Mm1iM290aHhvZndw" target="_blank">Sr Forneria Pizzas</a> - SN 03 com WE 21, n° 12. Cidade Nova. (91) 98921-0155</li>
+</ul>
+</section>
+
+<section id="burgers" class="categoria">
+<h2>Burguers, Lanches e Sorvetes</h2>
+<ul>
+<li><a href="https://www.instagram.com/ahoburger/" target="_blank">Ahô Burger</a> - Tv. WE 35, n° 8. Cidade Nova. (91) 98519-4209</li>
+<li><a href="https://www.instagram.com/blaussorvetes/" target="_blank">Blaus Sorevetes e Picolé</a> - Rua da Providência, nº 451. Cidade Nova. (91) 98264-0077</li>
+<li><a href="https://instagram.com/chiquinhosorvetes" target="_blank">Chiquinho Sorvetes</a> - Rua da Providência, n° 20 - Cidade Nova. (91) 98128-5923</li>
+<li><a href="https://www.instagram.com/damatasorvetes?igsh=MWZxc2MyaDFwNGk4ag%3D%3D" target="_blank">Damatas Sorvetes</a> - Rua da Providência, n° 20 - Cidade Nova. (91) 98128-5923</li>
+<li><a href="https://www.instagram.com/greendoorburger?igsh=MWF5a2l3cGJwZ3JzYg%3D%3D" target="_blank">Green Door Burguer</a> - Tv. WE 8-B. n° 252. Cidade Nova. (91) 98590-2232</li>
+<li><a href="https://www.instagram.com/gojuiceananin?igsh=bHp1MTkxc3I3ZDBq" target="_blank">Go Juice</a> - Parque Cultural Vila Maguary S/N. Maguari. (91) 99977-3362</li>
+<li><a href="https://www.instagram.com/nukanto534?igsh=MWs0OHF1dmNxdWo0Mg%3D%3D" target="_blank">NuKanto Burguer</a> - Tv. WE 08-A, n°111. Cidade Nova.</li>
+<li><a href="https://www.instagram.com/ragnarburger/" target="_blank">Ragnar Burguer</a> - R. SN 22 com WE 55, n° 972. Cidade Nova. (91) 8902-8666</li>
+<li><a href="https://www.instagram.com/sorvetesmaioca/" target="_blank">Maioca Sorvetes e Café</a> - Parque Cultural Vila Maguary |Tv. WE 13-B, n° 22. Cidade Nova.</li>
+<li><a href="https://www.instagram.com/vikingsburger/" target="_blank">Vikings Burger</a> - Av. Três Corações com Tv. WE 10-A S/N. Cidade Nova. (91) 3353-2037</li>
+</ul>
+</section>
+
+<section id="balnearios" class="categoria">
+<h2>Balneários e Espaços Recreativos</h2>
+<ul>
+<li><a href="https://www.instagram.com/equoterapia_afazendinha?igsh=OXd1NzA0ajA0NWtz" target="_blank">A Fazendinha</a> - Estr. Vila Nova, Pass. Águas Verdes, n° 12. Coqueiro. (91) 99308-8813</li>
+<li><a href="https://www.instagram.com/amazonia_aventura/" target="_blank">Amazônia Ventura</a> - Parque Cultural Vila Maguary. Maguari.</li>
+<li><a href="https://www.instagram.com/balnearioisaac/" target="_blank">Balneário do Isaac</a> - R. Paulo Assunção, 5636. Icuí Guajará. (91) 98511-7399</li>
+<li><a href="https://www.instagram.com/balnearioparaisodafamilia/" target="_blank">Balneário Paraiso da Familia</a> - R. Olho d`Água, n° 108. Curuçambá. (91) 99263-8700</li>
+<li><a href="https://www.instagram.com/parqueculturalvilamaguary/" target="_blank">Parque Cultural Vila Maguary</a> - Av. Claude Saunders, n° 3360. Maguari.</li>
+<li><a href="https://maps.app.goo.gl/jExbLTGy5k8d2mkA7" target="_blank">Orla de Ananindeua</a> - Rua Santa Fé. Icuí-Guajará.</li>
+<li><a href="https://www.instagram.com/marina_canto_dailha/" target="_blank">Marina Canto da Ilha</a> - R. Manoel Rosa, n° 1487. Curuçambá.</li>
+<li><a href="https://www.instagram.com/rancho_imperador_/" target="_blank">Rancho Imperador</a> - Av. Principal do Aurá, S/N. Aurá. (91) 9828-64776</li>
+</ul>
+</section>
+
+<section id="teatro,museu e galeria de arte" class="categoria">
+<h2>Casas Noturnas</h2>
+<ul>
+<li><a href="https://www.instagram.com/ceudasartesananindeua/" target="_blank">Céu das Artes</a> - R. 11, n° 667. Julia Seffer. (91) 98128-1149</li>
+<li><a href="https://maps.app.goo.gl/UVceDCo38x4zfwPD9" target="_blank">Galeria Jorge Granhen</a> - Casarão do Curtume. Tv. das Mercês. Maguari.</li>
+<li><a href="https://maps.app.goo.gl/hpEb62DXNtWWQuAB9" target="_blank">Museu Interativo de Ananindeua</a> - Av. Claude Saunders, n° 3360. Maguari.</li>
+<li><a href="https://www.instagram.com/parqueculturalvilamaguary/" target="_blank">Teatro Municipal de Ananindeua</a> - Av. Claude Saunders, n° 3360. Maguari.</li>
+</ul>
+</section>
+
+<section id="casas noturnas" class="categoria">
+<h2>Casas Noturnas</h2>
+<ul>
+<li><a href="https://www.instagram.com/blackpubprime/" target="_blank">Black Pub Prime</a> - Tv. WE 13-B. Cidade Nova. (91) 98194-8532</li>
+<li><a href="https://www.instagram.com/nova.anani.beer?igsh=MWNtdzIzNms2c2Zmdg%3D%3D" target="_blank">Nova Anani Beer</a> - Pass. Jardim Brasil II, n° 67-B. Providência. (91) 98405-0465</li>
+<li><a href="https://www.instagram.com/rio.vibecarioca_ananindeua/related_profiles/" target="_blank">Rio Vibe Carioca</a> - SN 03, entre WE 38 e WE 39. Cidade Nova IV.</li>
+</ul>
+</section>
+
+<section id="passeios" class="categoria">
+<h2>Passeios Turísticos</h2>
+<ul>
+<li><a href="https://www.instagram.com/amazonkiteesup/" target="_blank">Amazon Kite & Sup</a> - Aluguel de stand up paddle. (91) 98438-1491</li>
+<li><a href="https://www.instagram.com/banzeirosup/" target="_blank">Banzeiro Sup Club</a> - Aluguel de stand up paddle. (91) 98100-1440</li>
+<li><a href="https://www.instagram.com/kayakclub2021/" target="_blank">Kayak Club</a> - Aluguel de caiaque de pesca. (91) 98412-1385</li>
+<li><a href="https://www.instagram.com/remadoresdosol/" target="_blank">Remadores do Sol</a> - Aluguel de caiaque oceânico. (91) 98528-4449</li>
+<li><a href="https://www.instagram.com/adrielson.tur/" target="_blank">Rota Certa Xperience</a> - Passeios turísticos. (91) 98743-2034</li>
+</ul>
+</section>
+
+<section id="espacos" class="categoria">
+<h2>Espaços Gastronômicos</h2>
+<ul>
+<li>Complexo Gastronômico – Parque do 8 - Parque do 8, Rua da Providência. Cidade Nova.</li>
+<li>Praça da Bíblia – Cidade Nova - Tv. SN 03 com WE 13-B. Cidade Nova.</li>
+<li>Praça do Maguari - Av. Claude Saunders com Quinta das Carmitas. Maguari.</li>
+<li>Praça Rotary - Rua da Providência, S/N. Cidade Nova.</li>
+<li>Orla de Ananindeua - Rua Santa Fé. Icuí-Guajará.</li>
+</ul>
+</section>
+
+<section id="feiras e mercados" class="categoria">
+<h2>Feiras e Mercados</h2>
+<ul>
+<li><a href="https://maps.app.goo.gl/8LfPtvuwuThibECU8" target="_blank">Feira da Cidade</a> - Av. Dom Vicente Zico, n° 189. (Arterial 18). Cidade Nova.</li>
+<li><a href="https://maps.app.goo.gl/VVdZ9zDnHTZ3VcPUS8" target="_blank">Feira do Artesanato</a> - Av. Arterial 5-A, n° 3650. Cidade Nova</li>
+<li><a href="https://maps.app.goo.gl/svV58NWyafYz923j9" target="_blank">Mercado Central</a> - Rod. Bernado Sayão (BR-010), n° 172. Centro</li>
+<li><a href="https://maps.app.goo.gl/LDtbaXSuHoew5DdUA" target="_blank">Mercado Independência</a> - Av. Independência, n° 2023. Distrito Industrial.</li>
+</ul>
+</section>
+
+<section id="contatos" class="categoria">
+<h2>Contatos Úteis</h2>
+<ul>
+<li>SAMU – <strong>192</strong></li>
+<li>Bombeiro – <strong>193</strong></li>
+<li>Guarda Civil Municipal – <strong>(91) 98459-8512</strong></li>
+<li>Defesa Civil Ananindeua – <strong>(91) 99339-8726</strong></li>
+<li>Serviço de Limpeza – <strong>(91) 98442-8117</strong></li>
+</ul>
+</section>
+
+<footer>
+Guia de Serviços • SELTUR • Prefeitura de Ananindeua
+</footer>
+
+<footer>
+• Secretario: Pedro Augusto Canto Salgado• 
+</footer>
+
+<footer>
+• Secretaria Adjunta: Herlem do Socorro Barra Farias•
+</footer>
+
+<footer>
+• Diretor de Turismo: Adrielson Furtado Almeida• 
+</footer>
+
+<footer>
+• Diretora Financeira: Cleia de Lima Silva Zeferino•
+</footer>
+
+<footer>
+•Equipe Técnica: Tiago Bricio, Matheus Miranda, Vitor Lima,Celso Coutinho•
+</footer>
+
+<script>
+function mostrarCategoria(id) {
+    var secoes = document.querySelectorAll('.categoria');
+    secoes.forEach(function(secao) {
+        secao.style.display = "none";
+    });
+    document.getElementById(id).style.display = "block";
+}
+
+function mostrarTodas() {
+    var secoes = document.querySelectorAll('.categoria');
+    secoes.forEach(function(secao) {
+        secao.style.display = "block";
+    });
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
