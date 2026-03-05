@@ -13,13 +13,14 @@ body {
     color: #263238;
 }
 
-header {
-    background: linear-gradient(135deg, #0D47A1, #2E7D32);
-    color: #fff;
-    text-align: center;
-    padding: 40px 15px;
-    position: relative;
+
+.banner {
+    width: 100%;
+    aspect-ratio: 1574 / 300; 
+    background: url("banner\ guia\ teste\ 2.jpeg") center center no-repeat;
+    background-size: cover; 
 }
+
 
 .logo-prefeitura {
     position: absolute;
@@ -31,6 +32,7 @@ header {
     height: 65px;
 }
 
+
 .seltur-topo {
     position: absolute;
     top: 15px;
@@ -38,6 +40,7 @@ header {
     font-size: 14px;
     font-weight: bold;
 }
+
 
 .menu {
     display: grid;
@@ -61,6 +64,7 @@ header {
     transform: translateY(-3px);
 }
 
+
 .btn-todas {
     background: #0D47A1;
     color: white;
@@ -76,6 +80,7 @@ header {
     background: #1B5E20;
 }
 
+
 .categoria {
     display: block;
     background: #fff;
@@ -90,7 +95,10 @@ h2 {
     padding-left: 10px;
 }
 
-ul { list-style: none; padding: 0; }
+ul { 
+    list-style: none; 
+    padding: 0; 
+}
 
 li {
     margin-bottom: 8px;
@@ -108,6 +116,7 @@ li {
     text-decoration: underline;
 }
 
+
 footer {
     background: linear-gradient(135deg, #1B5E20, #0D47A1);
     color: #fff;
@@ -119,22 +128,7 @@ footer {
 
 <body>
 
-<header>
-    <div class="logo-prefeitura">
-        <img src="logo.png" alt="Prefeitura de Ananindeua" width="250" height="150">
-        <p style="font-size: 12px; margin-top: 5px;">SELTUR - Secretaria Municipal de Lazer e Turismo</p>
-    </div>
-   
-
-    <div class="seltur-topo">
-        SELTUR - SECRETARIA DE LAZER E TURISMO DE ANANINDEUA
-    </div>
-
-    
-
-    <h1>Guia de Serviços</h1>
-    <p>Município de Ananindeua</p>
-</header>
+<header class="banner"></header>
 
 <section class="menu">
     <a onclick="mostrarCategoria('hospedagem')">Hospedagem</a>
@@ -143,10 +137,23 @@ footer {
     <a onclick="mostrarCategoria('pizzarias')">Pizzarias</a>
     <a onclick="mostrarCategoria('burgers')">Burguers, Lanches e Sorvetes</a>
     <a onclick="mostrarCategoria('balnearios')">Balneários e Espaços Recreativos</a>
+    <a onclick="mostrarCategoria('teatro,museu e galeria de arte')">Teatro, Museu e Galeria de Arte</a>
     <a onclick="mostrarCategoria('casas noturnas')">Casas Noturnas</a>
     <a onclick="mostrarCategoria('passeios')">Passeios Turísticos</a>
     <a onclick="mostrarCategoria('espacos')">Espaços Gastronômicos</a>
+    <a onclick="mostrarCategoria('feiras e mercados')">Feiras e Mercados</a>
     <a onclick="mostrarCategoria('contatos')">Contatos Úteis</a>
+    <a href="mapas/Mapa de Serviços de Ananindeua.png" target="_blank" class="botao">
+        Mapa de Serviços de Ananindeua
+    </a>
+
+    <a href="mapas/mapa-dos-bairros-de-ananindeua.png" target="_blank" class="botao">
+        Mapa dos Bairros de Ananindeua
+    </a>
+
+    <a href="mapas/Mapa-da-Região-Insular.png" target="_blank" class="botao">
+        Mapa da Região Insular de Ananindeua
+    </a>
 </section>
 
 <div style="text-align:center;">
@@ -228,6 +235,7 @@ footer {
 <h2>Pizzarias</h2>
 <ul>
 <li><a href="https://www.instagram.com/ciapaulistacidadenova/" target="_blank">Cia.Paulista de Pizza</a> - Tv. WE 27, n° 39. Cidade Nova. (91) 98067-4909</li>
+<li><a href="https://www.instagram.com/deliciasdaleneoficiall?igsh=MWkxZ21nbnZ4amRkaQ%3D%3D" target="_blank">Delicias da Lene</a>  - R. Santa Fé. Icuí-Guajará. (91) 98044-7700</li>
 <li><a href="https://www.instagram.com/doutor_pizza/" target="_blank">Doutor Pizza</a> - Tv. WE 13-B. n° 72. Cidade Nova. (91) 99190-3092</li>
 <li><a href="https://www.instagram.com/famigliapizza/" target="_blank">Famiglia da Pizza</a> - Tv. WE 13-B, n° 261. Cidade Nova. (91) 98314-8733</li>
 <li><a href="https://www.instagram.com/buenas.pizzas.br/" target="_blank">Pizzaria Buenas Pizzas</a> - Estr. Providência n° 355. Cidade Nova. (91) 99215-1100</li>
@@ -247,6 +255,7 @@ footer {
 <li><a href="https://www.instagram.com/damatasorvetes?igsh=MWZxc2MyaDFwNGk4ag%3D%3D" target="_blank">Damatas Sorvetes</a> - Rua da Providência, n° 20 - Cidade Nova. (91) 98128-5923</li>
 <li><a href="https://www.instagram.com/greendoorburger?igsh=MWF5a2l3cGJwZ3JzYg%3D%3D" target="_blank">Green Door Burguer</a> - Tv. WE 8-B. n° 252. Cidade Nova. (91) 98590-2232</li>
 <li><a href="https://www.instagram.com/gojuiceananin?igsh=bHp1MTkxc3I3ZDBq" target="_blank">Go Juice</a> - Parque Cultural Vila Maguary S/N. Maguari. (91) 99977-3362</li>
+<li><a href="https://maps.app.goo.gl/vFjC3waRVQSet61T7" target="_blank">Hamburger da Orla</a> - R. Santa Fé. Icuí-Guajará</li>
 <li><a href="https://www.instagram.com/nukanto534?igsh=MWs0OHF1dmNxdWo0Mg%3D%3D" target="_blank">NuKanto Burguer</a> - Tv. WE 08-A, n°111. Cidade Nova.</li>
 <li><a href="https://www.instagram.com/ragnarburger/" target="_blank">Ragnar Burguer</a> - R. SN 22 com WE 55, n° 972. Cidade Nova. (91) 8902-8666</li>
 <li><a href="https://www.instagram.com/sorvetesmaioca/" target="_blank">Maioca Sorvetes e Café</a> - Parque Cultural Vila Maguary |Tv. WE 13-B, n° 22. Cidade Nova.</li>
@@ -261,7 +270,20 @@ footer {
 <li><a href="https://www.instagram.com/amazonia_aventura/" target="_blank">Amazônia Ventura</a> - Parque Cultural Vila Maguary. Maguari.</li>
 <li><a href="https://www.instagram.com/balnearioisaac/" target="_blank">Balneário do Isaac</a> - R. Paulo Assunção, 5636. Icuí Guajará. (91) 98511-7399</li>
 <li><a href="https://www.instagram.com/balnearioparaisodafamilia/" target="_blank">Balneário Paraiso da Familia</a> - R. Olho d`Água, n° 108. Curuçambá. (91) 99263-8700</li>
+<li><a href="https://www.instagram.com/parqueculturalvilamaguary/" target="_blank">Parque Cultural Vila Maguary</a> - Av. Claude Saunders, n° 3360. Maguari.</li>
+<li><a href="https://maps.app.goo.gl/jExbLTGy5k8d2mkA7" target="_blank">Orla de Ananindeua</a> - Rua Santa Fé. Icuí-Guajará.</li>
+<li><a href="https://www.instagram.com/marina_canto_dailha/" target="_blank">Marina Canto da Ilha</a> - R. Manoel Rosa, n° 1487. Curuçambá.</li>
 <li><a href="https://www.instagram.com/rancho_imperador_/" target="_blank">Rancho Imperador</a> - Av. Principal do Aurá, S/N. Aurá. (91) 9828-64776</li>
+</ul>
+</section>
+
+<section id="teatro,museu e galeria de arte" class="categoria">
+<h2>Casas Noturnas</h2>
+<ul>
+<li><a href="https://www.instagram.com/ceudasartesananindeua/" target="_blank">Céu das Artes</a> - R. 11, n° 667. Julia Seffer. (91) 98128-1149</li>
+<li><a href="https://maps.app.goo.gl/UVceDCo38x4zfwPD9" target="_blank">Galeria Jorge Granhen</a> - Casarão do Curtume. Tv. das Mercês. Maguari.</li>
+<li><a href="https://maps.app.goo.gl/hpEb62DXNtWWQuAB9" target="_blank">Museu Interativo de Ananindeua</a> - Av. Claude Saunders, n° 3360. Maguari.</li>
+<li><a href="https://www.instagram.com/parqueculturalvilamaguary/" target="_blank">Teatro Municipal de Ananindeua</a> - Av. Claude Saunders, n° 3360. Maguari.</li>
 </ul>
 </section>
 
@@ -270,6 +292,7 @@ footer {
 <ul>
 <li><a href="https://www.instagram.com/blackpubprime/" target="_blank">Black Pub Prime</a> - Tv. WE 13-B. Cidade Nova. (91) 98194-8532</li>
 <li><a href="https://www.instagram.com/nova.anani.beer?igsh=MWNtdzIzNms2c2Zmdg%3D%3D" target="_blank">Nova Anani Beer</a> - Pass. Jardim Brasil II, n° 67-B. Providência. (91) 98405-0465</li>
+<li><a href="https://www.instagram.com/rio.vibecarioca_ananindeua/related_profiles/" target="_blank">Rio Vibe Carioca</a> - SN 03, entre WE 38 e WE 39. Cidade Nova IV.</li>
 </ul>
 </section>
 
@@ -280,18 +303,28 @@ footer {
 <li><a href="https://www.instagram.com/banzeirosup/" target="_blank">Banzeiro Sup Club</a> - Aluguel de stand up paddle. (91) 98100-1440</li>
 <li><a href="https://www.instagram.com/kayakclub2021/" target="_blank">Kayak Club</a> - Aluguel de caiaque de pesca. (91) 98412-1385</li>
 <li><a href="https://www.instagram.com/remadoresdosol/" target="_blank">Remadores do Sol</a> - Aluguel de caiaque oceânico. (91) 98528-4449</li>
-<li><a href="https://www.instagram.com/adrielson.tur/" target="_blank">Rota Certa Xperience</a> </li>
+<li><a href="https://www.instagram.com/adrielson.tur/" target="_blank">Rota Certa Xperience</a> - Passeios turísticos. (91) 98743-2034</li>
 </ul>
 </section>
 
 <section id="espacos" class="categoria">
 <h2>Espaços Gastronômicos</h2>
 <ul>
-<li>Complexo Gastronômico – Parque do 8 - Parque do 8, Rua da Providência. Cidade Nova.</li>
-<li>Praça da Bíblia – Cidade Nova - Tv. SN 03 com WE 13-B. Cidade Nova.</li>
-<li>Praça do Maguari - Av. Claude Saunders com Quinta das Carmitas. Maguari.</li>
-<li>Praça Rotary - Rua da Providência, S/N. Cidade Nova.</li>
-<li>Orla de Ananindeua - Rua Santa Fé. Icuí-Guajará.</li>
+<li><a href="https://maps.app.goo.gl/ux3wdLfFw6Fbub1t6" target="_blank">Complexo do 8</a> – Parque do 8 - Parque do 8, Rua da Providência. Cidade Nova.</li>
+<li><a href="https://maps.app.goo.gl/ikaKxqDXUJukT9Wc9" target="_blank">Praça da Biblia</a> - Tv. SN 03 com WE 13-B. Cidade Nova.</li>
+<li><a href="https://maps.app.goo.gl/MG6VqiLQx7zG4kTS7" target="_blank">Praça do Maguari</a> - Av. Claude Saunders com Quinta das Carmitas. Maguari.</li>
+<li><a href="https://maps.app.goo.gl/oQPdmCLrGSYUZErv8" target="_blank">Parça do Rotary</a> - Rua da Providência, S/N. Cidade Nova.</li>
+<li><a href="https://maps.app.goo.gl/jExbLTGy5k8d2mkA7" target="_blank">Orla de Ananindeua</a> - R. Santa Fé. Icuí-Guajará.</li>
+</ul>
+</section>
+
+<section id="feiras e mercados" class="categoria">
+<h2>Feiras e Mercados</h2>
+<ul>
+<li><a href="https://maps.app.goo.gl/8LfPtvuwuThibECU8" target="_blank">Feira da Cidade</a> - Av. Dom Vicente Zico, n° 189. (Arterial 18). Cidade Nova.</li>
+<li><a href="https://maps.app.goo.gl/VVdZ9zDnHTZ3VcPUS8" target="_blank">Feira do Artesanato</a> - Av. Arterial 5-A, n° 3650. Cidade Nova</li>
+<li><a href="https://maps.app.goo.gl/svV58NWyafYz923j9" target="_blank">Mercado Central</a> - Rod. Bernado Sayão (BR-010), n° 172. Centro</li>
+<li><a href="https://maps.app.goo.gl/LDtbaXSuHoew5DdUA" target="_blank">Mercado Independência</a> - Av. Independência, n° 2023. Distrito Industrial.</li>
 </ul>
 </section>
 
@@ -307,7 +340,31 @@ footer {
 </section>
 
 <footer>
-Guia de Serviços • SELTUR • Prefeitura de Ananindeua
+Guia de Serviços • SELTUR • Prefeitura Municipal de Ananindeua
+</footer>
+
+<footer>
+• Secretario: Pedro Augusto Canto Salgado• 
+</footer>
+
+<footer>
+• Chefe de Gabinete: Suely Modesto• 
+</footer>
+
+<footer>
+• Secretaria Adjunta: Herlem do Socorro Barra Farias•
+</footer>
+
+<footer>
+• Diretor de Turismo: Adrielson Furtado Almeida• 
+</footer>
+
+<footer>
+• Diretora Financeira: Cleia de Lima Silva Zeferino•
+</footer>
+
+<footer>
+•Coordenadores: Tiago Bricio, Matheus Miranda, Vitor Lima,Celso Coutinho•
 </footer>
 
 <script>

@@ -13,22 +13,14 @@ body {
     color: #263238;
 }
 
+
 .banner {
-    background: url("banner-site-guia.png") center/cover no-repeat;
     width: 100%;
-    height: 230px; 
-}
-.banner {
-    background: url("image_1_1772111384793.jpg") center/cover no-repeat;
-    width: 100%;
-    height: 180px;
+    aspect-ratio: 1574 / 300; 
+    background: url("banner\ guia\ teste\ 2.jpeg") center center no-repeat;
+    background-size: cover; 
 }
 
-@media (min-width: 768px) {
-    .banner {
-        height: 480px;
-    }
-}
 
 .logo-prefeitura {
     position: absolute;
@@ -40,6 +32,7 @@ body {
     height: 65px;
 }
 
+
 .seltur-topo {
     position: absolute;
     top: 15px;
@@ -47,6 +40,7 @@ body {
     font-size: 14px;
     font-weight: bold;
 }
+
 
 .menu {
     display: grid;
@@ -70,6 +64,7 @@ body {
     transform: translateY(-3px);
 }
 
+
 .btn-todas {
     background: #0D47A1;
     color: white;
@@ -85,6 +80,7 @@ body {
     background: #1B5E20;
 }
 
+
 .categoria {
     display: block;
     background: #fff;
@@ -99,7 +95,10 @@ h2 {
     padding-left: 10px;
 }
 
-ul { list-style: none; padding: 0; }
+ul { 
+    list-style: none; 
+    padding: 0; 
+}
 
 li {
     margin-bottom: 8px;
@@ -116,6 +115,7 @@ li {
 .categoria a:hover {
     text-decoration: underline;
 }
+
 
 footer {
     background: linear-gradient(135deg, #1B5E20, #0D47A1);
@@ -143,9 +143,6 @@ footer {
     <a onclick="mostrarCategoria('espacos')">Espaços Gastronômicos</a>
     <a onclick="mostrarCategoria('feiras e mercados')">Feiras e Mercados</a>
     <a onclick="mostrarCategoria('contatos')">Contatos Úteis</a>
-</section>
-
-<div class="menu">
     <a href="mapas/mapa-de-servicos-de-ananindeua.png" target="_blank" class="botao">
         Mapa de Serviços de Ananindeua
     </a>
@@ -154,10 +151,10 @@ footer {
         Mapa dos Bairros de Ananindeua
     </a>
 
-    <a href="mapas/regiao-insular-de-ananindeua.png" target="_blank" class="botao">
+    <a href="mapas/mapa da Região Insular.png" target="_blank" class="botao">
         Mapa da Região Insular de Ananindeua
     </a>
-</div>
+</section>
 
 <div style="text-align:center;">
     <button onclick="mostrarTodas()" class="btn-todas">
@@ -238,6 +235,7 @@ footer {
 <h2>Pizzarias</h2>
 <ul>
 <li><a href="https://www.instagram.com/ciapaulistacidadenova/" target="_blank">Cia.Paulista de Pizza</a> - Tv. WE 27, n° 39. Cidade Nova. (91) 98067-4909</li>
+<li><a href="https://www.instagram.com/deliciasdaleneoficiall?igsh=MWkxZ21nbnZ4amRkaQ%3D%3D" target="_blank">Delicias da Lene</a>  - R. Santa Fé. Icuí-Guajará. (91) 98044-7700</li>
 <li><a href="https://www.instagram.com/doutor_pizza/" target="_blank">Doutor Pizza</a> - Tv. WE 13-B. n° 72. Cidade Nova. (91) 99190-3092</li>
 <li><a href="https://www.instagram.com/famigliapizza/" target="_blank">Famiglia da Pizza</a> - Tv. WE 13-B, n° 261. Cidade Nova. (91) 98314-8733</li>
 <li><a href="https://www.instagram.com/buenas.pizzas.br/" target="_blank">Pizzaria Buenas Pizzas</a> - Estr. Providência n° 355. Cidade Nova. (91) 99215-1100</li>
@@ -257,6 +255,7 @@ footer {
 <li><a href="https://www.instagram.com/damatasorvetes?igsh=MWZxc2MyaDFwNGk4ag%3D%3D" target="_blank">Damatas Sorvetes</a> - Rua da Providência, n° 20 - Cidade Nova. (91) 98128-5923</li>
 <li><a href="https://www.instagram.com/greendoorburger?igsh=MWF5a2l3cGJwZ3JzYg%3D%3D" target="_blank">Green Door Burguer</a> - Tv. WE 8-B. n° 252. Cidade Nova. (91) 98590-2232</li>
 <li><a href="https://www.instagram.com/gojuiceananin?igsh=bHp1MTkxc3I3ZDBq" target="_blank">Go Juice</a> - Parque Cultural Vila Maguary S/N. Maguari. (91) 99977-3362</li>
+<li><a href="https://maps.app.goo.gl/vFjC3waRVQSet61T7" target="_blank">Hamburger da Orla</a> - R. Santa Fé. Icuí-Guajará</li>
 <li><a href="https://www.instagram.com/nukanto534?igsh=MWs0OHF1dmNxdWo0Mg%3D%3D" target="_blank">NuKanto Burguer</a> - Tv. WE 08-A, n°111. Cidade Nova.</li>
 <li><a href="https://www.instagram.com/ragnarburger/" target="_blank">Ragnar Burguer</a> - R. SN 22 com WE 55, n° 972. Cidade Nova. (91) 8902-8666</li>
 <li><a href="https://www.instagram.com/sorvetesmaioca/" target="_blank">Maioca Sorvetes e Café</a> - Parque Cultural Vila Maguary |Tv. WE 13-B, n° 22. Cidade Nova.</li>
@@ -311,11 +310,11 @@ footer {
 <section id="espacos" class="categoria">
 <h2>Espaços Gastronômicos</h2>
 <ul>
-<li>Complexo Gastronômico – Parque do 8 - Parque do 8, Rua da Providência. Cidade Nova.</li>
-<li>Praça da Bíblia – Cidade Nova - Tv. SN 03 com WE 13-B. Cidade Nova.</li>
-<li>Praça do Maguari - Av. Claude Saunders com Quinta das Carmitas. Maguari.</li>
-<li>Praça Rotary - Rua da Providência, S/N. Cidade Nova.</li>
-<li>Orla de Ananindeua - Rua Santa Fé. Icuí-Guajará.</li>
+<li><a href="https://maps.app.goo.gl/ux3wdLfFw6Fbub1t6" target="_blank">Complexo do 8</a> – Parque do 8 - Parque do 8, Rua da Providência. Cidade Nova.</li>
+<li><a href="https://maps.app.goo.gl/ikaKxqDXUJukT9Wc9" target="_blank">Praça da Biblia</a> - Tv. SN 03 com WE 13-B. Cidade Nova.</li>
+<li><a href="https://maps.app.goo.gl/MG6VqiLQx7zG4kTS7" target="_blank">Praça do Maguari</a> - Av. Claude Saunders com Quinta das Carmitas. Maguari.</li>
+<li><a href="https://maps.app.goo.gl/oQPdmCLrGSYUZErv8" target="_blank">Parça do Rotary</a> - Rua da Providência, S/N. Cidade Nova.</li>
+<li><a href="https://maps.app.goo.gl/jExbLTGy5k8d2mkA7" target="_blank">Orla de Ananindeua</a> - R. Santa Fé. Icuí-Guajará.</li>
 </ul>
 </section>
 
@@ -347,6 +346,11 @@ Guia de Serviços • SELTUR • Prefeitura de Ananindeua
 <footer>
 • Secretario: Pedro Augusto Canto Salgado• 
 </footer>
+
+<footer>
+• Chefe de Gabinete: Suely Modesto• 
+</footer>
+
 
 <footer>
 • Secretaria Adjunta: Herlem do Socorro Barra Farias•
